@@ -1,0 +1,896 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: "Betterworks";
+    src: url("../fuentes/Betterworks.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,*::after, *::before { 
+    box-sizing: border-box; 
+}
+
+body{
+    background-color: #1f5075;
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    color: #fff;
+    font-size:22px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    margin:auto;
+    width: 1140px;
+}
+
+.btn{
+    padding: 10px 50px;
+}
+
+
+.btn-rounded{
+    border-radius:50px;
+}
+
+.btn-primary{
+    background-color: #163953;
+}
+
+.btn-primary:hover{
+    background-color: #1c4768;
+}
+
+.btn-secundary{
+    background-color: #3690bd;
+}
+
+.btn-secundary:hover{
+    background-color: #50a2ca;
+}
+
+.btn_small{
+    color:white;
+    font-weight:bold;
+    font-size:18px;
+}
+
+
+.card{
+    background-color:white;
+    padding:40px 40px 10px 40px;
+    border-radius:20px;
+    width: 210px;
+    margin: 40px 20px;
+    box-shadow: 1px 1px 5px 0px rgb(110, 175, 255);
+}
+
+.card:hover{
+    box-shadow: 0px 0px 15px 2px rgba(57, 156, 205, 0.97);
+}
+
+.card h3{
+    color: #163953;
+    text-align: center;
+}
+
+.wrap-container{
+    max-width: 1024px;
+    margin-top: 30px;
+}
+    
+.font-primary{
+    font-family: Betterworks;
+}
+
+.padding-seccion{
+    padding: 80px 0;
+}
+
+.textura{
+    background-image: url(../img/fondo.png);
+    background-repeat: repeat;
+}
+
+.titulos{
+    font-size:30px;
+}
+
+footer h3{
+    margin: 0;
+}
+/*-------------------------- Flex -------------------------------*/
+/*---------------------------------------------------------------*/
+
+.d-flex{
+    display: flex;
+}
+
+.col{
+    flex-direction: column;
+}
+
+.just-end{
+    justify-content: end;
+}
+
+.just-around{
+    justify-content: space-around;
+}
+
+.just-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.align-end{
+    align-items: end;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+
+
+
+
+/*----------------------------- Fin Flex -------------------------------*/
+/*----------------------------------------------------------------------*/
+
+
+/*------------------------------- Header -------------------------------*/
+/*----------------------------------------------------------------------*/
+
+header{
+    background-color: #3690bd;
+    height:80px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 4px 2px 5px 0px rgb(2, 25, 54);
+    z-index: 10;
+} 
+
+header ul li{
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+header a{
+    color:white;
+    font-size: 1.5rem;
+    text-shadow: 2px 3px 4px rgba(2,25,54,0.6);
+}
+
+header nav{
+    margin-right: 100px;
+}
+
+header nav ul:last-child{
+    margin-left: 10px;
+}
+
+.respmenu nav ul:first-child li:hover a{
+    border-bottom: 2px solid white;
+}
+
+
+/* --------------------------------Sobre Mi ---------------------------------*/
+/* ------------------------------------------------------------------------- */
+
+#sobreMi{
+    width: 100%;
+    padding-top: 60px;
+}
+
+#sobreMi img{  
+    width:100%;
+    margin-bottom: -100px;
+}
+
+#sobreMi div div{
+    width:50%;
+}
+
+#presentacion{
+    padding-right: 75px;
+}
+
+h1{
+    font-size:40px;
+    line-height:2.2;
+    margin: 0;
+}
+
+h1 em{
+    display:block;
+    font-size:30px;
+    margin-left: 143px;
+}
+
+#sobreMi h2 {
+    margin-bottom: 47px;
+    letter-spacing: 2.2px;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+#sobreMi .btn{
+    margin-bottom:-20px;
+}
+
+
+
+
+/* -------------------------------- Conocimientos ---------------------------------*/
+/* ------------------------------------------------------------------------------- */
+
+#conocimientos{
+    margin-top: 0px;
+ } 
+
+
+
+#conocimientos div div p{
+    text-align:center;
+}
+
+
+/* --------------------------------    Cita    ---------------------------------*/
+/* -----------------------------------------------------------------------------*/
+
+#cita div{
+    background-image:url(../img/cita.png);
+    background-repeat:no-repeat;
+    width: 65%;
+    margin: 0 auto;
+    color: #163953;
+    padding:80px;
+    height:500px;
+    object-fit: contain;
+    background-position: center;
+}
+
+#cita div p{
+    width: 410px;
+    text-align: center;
+    font-size:25px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+#cita div p:last-child{
+    padding-left:200px;
+    margin-top: 10px;
+}
+
+/* -------------------------------------- Proyectos ------------------------------*/
+/* ------------------------------------------------------------------------------ */
+
+/* .proyectos{
+    height: 400px;
+} */
+
+.proyectos img{
+    display: block;
+}
+
+.proyectos a:hover{
+    box-shadow: 0px 0px 15px 2px rgba(57, 156, 205, 0.97);
+}
+
+.proyectos a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius:30px;
+}
+
+.proyectos a span{
+    background-color: transparent;
+    left:0;
+    right:0;
+    bottom:0;
+    display:block;
+    position:absolute;
+    height: 50%;
+    padding: 30px;
+    color:white;
+    padding: 30px;
+    text-align: center;
+    color: transparent;
+}
+
+.proyectos a:hover span{
+    background-color:#d3e8fa;
+    -webkit-transition: background 1s ease;
+    -moz-transition: background 1s ease;
+    -ms-transition: background 1s ease;
+    -o-transition: background 1s ease;
+    transition: background 1s cubic-bezier(.45, .05, .55, .95);
+    opacity: 1;
+    color: #1c4768;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#proyectos .container .wrap{
+    padding-top: 70px;
+}
+
+.contenedor-proyectos{
+    width:1000px;
+}
+
+#proyectos .container{
+    max-width:1000px;
+}
+
+.cont-proyectos{
+    gap: 50px;
+}
+
+/* -------------------------------------- Contactame -----------------------------*/
+/* ------------------------------------------------------------------------------ */
+
+/* .contacto{
+    padding:100px 0;
+}
+
+.contacto ul{
+    padding-left:0;
+}
+.contacto ul li{
+    list-style-type: none;
+}
+
+#contactame nav ul li a:hover i, #contactame nav ul li:hover i{
+    color: #3590bd;
+}
+
+.input-radius{
+    border-radius:30px;
+}
+
+form{
+    width:100%;
+}
+
+label{
+    display:block;
+    margin-bottom:10px;
+    margin-top:20px;
+    font-size:20px;
+}
+
+input:not(input[type="submit"]), textarea {
+    display:block;
+    width: 100%;
+    padding:15px;
+}
+
+
+
+input[type="text"], input[type="email"]{
+    height:40px;
+    border: none;
+    font-size: 15px;
+}
+
+input[type="submit"]{
+    border: none;
+    margin-top: 25px;
+}
+
+textarea{
+    border: none;
+    resize:none;
+    font-family: 'PT Sans', sans-serif;
+    font-size:15px;
+}
+
+.formulario{
+    margin-left:60px;
+}
+
+.contacto{
+    margin: auto;
+}
+
+.contacto h2{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.datos :first-child{
+    margin-right: 15px;
+}
+
+.datos div:last-child{
+    margin-left:15px;
+}
+#contactame i{
+    color: white;
+    width:40px;
+    font-size:30px;
+}
+
+#contactame ul{
+    margin-top: 50px;
+}
+
+#contactame ul li{
+    margin-top: 20px;
+}
+
+#contactame ul li a{
+    color: white;
+} */
+
+.contacto {
+    padding: 100px 0;
+}
+
+.contacto ul {
+    padding-left: 0;
+}
+
+.contacto ul li {
+    list-style-type: none;
+}
+
+#contactame nav ul li a:hover i,
+#contactame nav ul li:hover i {
+    color: #3590bd;
+}
+
+
+
+
+.formulario {
+    margin-left: 60px;
+}
+
+.contacto {
+    margin: auto;
+}
+
+.contacto h2 {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.datos :first-child {
+    margin-right: 15px;
+}
+
+.datos div:last-child {
+    margin-left: 15px;
+}
+
+#contactame i {
+    color: white;
+    font-size: 70px;
+    line-height: 2;
+}
+
+#contactame ul {
+    /* margin-top: 50px; */
+    width: 900px;
+}
+
+#contactame ul li {
+    margin: 20px 10px 0 10px;
+    /* width: 250px; */
+}
+
+#contactame ul li a {
+    color: white;
+}
+
+.disable-select {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by any browser but < IE9 */
+}
+
+/* -------------------------------------- Footer ---------------------------------*/
+/* ------------------------------------------------------------------------------ */
+
+footer{
+    padding:50px 0;
+}
+
+footer ul{
+    padding-left: 0;
+}
+footer ul li{
+    list-style-type: none;
+    margin: 40px;
+}
+
+footer ul li i{
+    font-size: 40px;
+    color: #fff;
+}
+
+footer h3{
+    padding:40px;
+}
+
+footer a{
+    color: #fff;
+}
+
+
+footer ul li i:hover{
+    color:#3590bd;
+}
+
+/* menu hamburguesa */
+
+#nav-desktop ul{
+    display: flex;
+}
+
+.respmenu input[type="checkbox"], .respmenu i{
+    display:none;  
+}
+
+
+
+/* Media Querys */
+
+/* ---------------------------------- Pantallas Grandes ----------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+@media (max-width: 1200px) { 
+
+    .container{
+        width: 980px;
+    }
+    .btn {
+    padding: 10px 30px;
+    }
+
+    h1{
+    font-size:40px;
+    line-height:2;
+    margin: 0;
+}
+
+h1 em{
+    display:block;
+    font-size:23px;
+    margin-left: 143px;
+}
+
+#sobreMi{
+    padding-top: 70px;
+}
+
+#sobreMi .btn{
+    margin-bottom:-20px;
+}
+
+    #sobreMi h2 {
+        margin-top: 13px;
+        margin-bottom: 32px;
+        letter-spacing: 1.4px;
+        font-size: 15px;
+    }
+
+    #cita div{
+        background-size: contain;
+    }
+}
+
+
+
+
+/* ---------------------------------- Tablets ----------------------------------- */
+/* ------------------------------------------------------------------------------ */
+
+@media (max-width: 992px) { 
+
+
+    .container{
+        width: 720px;
+    }
+
+    .align-mob-center{
+        align-items: center;
+    }
+    /* Menú */
+
+    .respmenu input[type="checkbox"], .respmenu i{
+        display:flex;  
+    }
+
+    .respmenu a {
+        color: inherit;
+        text-decoration: none;
+        display: block;
+        padding: 10px 20px;
+        font-variant: small-caps;
+        text-shadow: 1px 1px black;
+    }
+
+    .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+        position: absolute;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        right: 13px;
+        top: 16px;
+        width: 48px;
+        height: 48px;
+    }
+
+    .respmenu .fa-bars, .respmenu .fa-times {
+        font-size: 48px;
+        pointer-events: none;
+    }
+
+    .respmenu input[type="checkbox"] {
+        opacity: 0;
+    }
+
+    .respmenu {
+        color: white;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        background-color: #1f5075;
+        background-image: url(../img/fondo.png);
+        background-repeat: repeat;
+    }
+
+    .respmenu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .respmenu ul li{
+        margin-top: 60px;
+    }
+
+    .respmenu nav {
+        display: none;
+    }
+
+    .respmenu input:checked ~ nav {
+        display: block;
+        animation: menu 2s ease 10ms 1 normal forwards;
+    }
+
+    @keyframes menu {
+        0% {
+        opacity: 0;
+        transform: translateY(-50px);
+        }
+
+        100% {
+        opacity: 1;
+        transform: translateY(0);
+        }
+    }
+    .respmenu input:checked ~ .fa-bars {
+        display: none;
+    }
+
+    .respmenu input:not(:checked) ~ .fa-times {
+        display: none;
+    }
+
+    .respmenu nav ul:last-child {
+        margin-left: 0px;
+        margin-top:0;
+    }
+
+
+    /* ----------------------Sobre Mí --------------------- */
+    /* ---------------------------------------------------- */
+
+     
+
+    
+    #sobreMi img {
+        width: 100%;
+        margin-bottom: -6px;
+        margin-top: 50px;
+    }
+
+    #sobreMi div div{
+        width: 100%;
+    }
+
+    #sobreMi div div:nth-child(2){
+        margin-bottom: -119px;
+    }
+
+    h1{
+        text-align: center;
+        font-size:47px;
+        line-height:2.9;
+    }
+
+    h1 em {
+        display: block;
+        font-size: 50px;
+        margin-left: 0;
+    }
+
+    #presentacion {
+        padding-right: 0px;
+    }
+
+    #sobreMi h2 {
+        letter-spacing: 1.5px;
+        font-weight: 200;
+        font-size: 25px;
+        margin-top:76px;
+        margin-bottom:80px;
+    }
+
+    .padding-seccion {
+        padding: 60px 0;
+    
+    }
+
+    #conocimientos h2{
+        margin-top: 70px; 
+    }
+
+
+
+    #cita div{
+        width:100%;
+    }
+
+    .d-flex .col-mob .col{
+        align-items: center;
+    }
+
+    #contactame nav{
+        margin-bottom: 60px;
+        margin-top: 30px;
+    }
+    .sobreMi-col-mob{
+        flex-direction: column;
+    }
+
+    .proyectos a span{
+        background-color:#173954;
+        opacity: 0.9;
+        color: #fff;
+        font-size: 20px;
+        height: 35%;
+    }
+
+    .datos :first-child {
+        margin-right: 0;
+    }
+    .datos div:last-child {
+        margin-left: 0;
+    }
+    .d-flex .col-mob .col {
+        align-items: stretch;
+    }
+
+    .formulario{
+        margin-left:0;
+    }
+    .datos :first-child{
+        margin-right:10px;
+    }
+
+    .datos div:last-child{
+        margin-left:10px;
+    }
+
+    footer nav ul li a{
+        font-size:19px;
+    }
+}
+
+/* ---------------------------------Celulares------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+@media (max-width: 768px) { 
+
+
+    .container{
+    width: 280px;
+    }
+
+    .col-mob{
+        flex-direction: column;
+    }
+
+    .align-mob-center {
+        align-items: center;
+    }
+
+    h1{
+        font-size:45px;
+    }
+
+    h1 em {
+        font-size: 32px;
+    }
+
+    #sobreMi h2 {
+        font-size:18px;
+    }
+
+    #sobreMi img{
+        margin-bottom: 70px;
+    }
+
+    .titulos{
+        font-size:20px;
+    }
+
+    #cita div{
+        width:100%;
+        background-size: 270px;
+        background-image: url(../img/cita_mob.png);
+    }
+
+    #cita div p {
+        width: 136px;
+        text-align: center;
+        font-size: 19px;
+        font-weight: bold;
+        margin-top: 18px;
+    }
+
+    #cita div p:last-child {
+        padding-left: 65px;
+        margin-top: -1px;
+    }
+
+    .datos :first-child {
+        margin-right: 0;
+    }
+
+    .datos div:last-child {
+        margin-left: 0;
+    }
+
+    footer {
+        padding: 40px 0;
+    }
+
+    footer h3{
+        text-align: center;
+    }
+
+    footer ul li {
+        margin: 16px;
+    }
+
+    
+
+}
