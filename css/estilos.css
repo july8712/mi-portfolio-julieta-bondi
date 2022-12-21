@@ -879,6 +879,17 @@ h1 em{
         margin-left: 0;
     }
 
+    #contacto h2{
+        margin-bottom:0;
+    }
+    #contactame h2{
+        margin-bottom: 0;
+    }
+
+    #contactame nav ul {
+        flex-direction: column;
+    }
+
     footer {
         padding: 40px 0;
     }
